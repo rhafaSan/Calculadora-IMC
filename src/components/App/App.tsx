@@ -1,11 +1,23 @@
-import useStyle from "./App.style";
+import './App.css'
 
 const App = () => {
-  const style = useStyle();
-
   return(
-    <div className={style.container}>
-      <h1>Olá mundo!</h1>
+    <div className="container">
+      <div className="mainBox">
+        <h1 className='title'>Calculadora de IMC</h1>
+        <hr />
+        <div className='calc_number'>
+          <label >Sua altura</label>
+          <br />
+          <input type="text"  />
+          <br />
+          <label>Seu peso</label>
+          <br />
+          <input type="text" />
+        </div>
+
+        <button>Calcular</button>
+      </div>
     </div>
   )
 }
